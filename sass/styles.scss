@@ -1,3 +1,14 @@
 body {
     background-color: rgb(161, 215, 236);
 }
+
+h1 {
+    margin: 50px auto;
+    width: max-content;
+}
+
+#timer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
