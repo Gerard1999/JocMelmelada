@@ -1,5 +1,5 @@
 body {
-  background-color: #a1d7ec;
+  background-color: rgba(144, 222, 253, 0.623);
 }
 
 h1 {
@@ -9,8 +9,55 @@ h1 {
   width: max-content;
 }
 
-#timer {
+.info {
+  border-radius: 15px;
+  background-color: #95dffb;
+  width: 550px;
+  height: 350px;
+  margin: 100px auto;
+  top: cal(50% -height);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 6px 6px 30px black;
+}
+.info #timer {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+}
+.info #timer h2 {
+  margin: auto;
+}
+.info .fruits {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .fruits div {
+  background: #3793d1;
+  box-shadow: 2px 2px 5px black;
+  border: 2px solid #8dc5f8;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.info .fruits div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70%;
+  height: 70%;
 }/*# sourceMappingURL=styles.css.map */
