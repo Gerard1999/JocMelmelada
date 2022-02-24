@@ -9,14 +9,28 @@ var jams = [
     {name : "raim", src: "../images/raim.png"},
     {name : "poma", src: "../images/poma.png"},
     {name : "pressec", src: "../images/pressec.png"},
-]
+];
+
+
+function comptador(min, sec) {
+    var counter = document.getElementById("timer");
+    var timer = setInterval(function() {
+        if (sec == 0) { sec = 59; min--;} 
+        else { sec--; }
+        counter.innerHTML = (min < 10 ? "0":"") + min + ":" + (sec < 10 ? "0":"") + sec;
+        if (min == 0 && sec == 0) {
+            console.log("finish");
+            clearInterval(timer);
+        }
+    }, 1000);
+}
 
 
 function init() {
     let sortedJams = jams.sort(()=> Math.random() - 0.5);
-    var counter = document.getElementById("timer");
-    console.log(counter);
-    // counter.innerHTML = "<h1>01:00 Min";
+
+    comptador(0, 5);
+
     let fruit1 = document.getElementById("fruit1");
     let fruit2 = document.getElementById("fruit2");
     let fruit3 = document.getElementById("fruit3");
