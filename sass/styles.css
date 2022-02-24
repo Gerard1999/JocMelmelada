@@ -23,19 +23,12 @@ h1 {
   box-shadow: 6px 6px 30px black;
 }
 .info #timer {
-  width: 200px;
-  height: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 32px;
+  padding: 20px;
+  font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: 5px solid black;
   border-radius: 10px;
   box-shadow: 4px 4px 10px black;
-}
-.info #timer h2 {
-  margin: auto;
 }
 .info .fruits {
   width: 450px;
